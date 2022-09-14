@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARRAYs</title>
+</head>
+<body>
+  <script>
+    //Find some element by referring to the index number
+    var arr=["elma", "üzüm", "armut"];
+    console.log(arr[1]); //return üzüm
+
+    //Change a value by the referring to the index number
+    arr[1]=["karpuz"];
+    console.log(arr[1]); //return karpuz
+
+    //Adding a new element in array
+    arr[arr.length]="muz";
+    console.log(arr[arr.length-1]);
+
+    //Arrays are Objects
+    var arr1= {
+      name:"Jhon",
+      surname: "Doe",
+      age: 46
+    };
+    console.log(arr1.name); //result Jhon
+
+    //we can also manipulate to value of arrays variable 
+    arr1.name= "James";
+    console.log(arr1.name); //result James
+    
+  
+    //If you use named indexes, JavaScript will redefine the array to an object.
+    const person = [];
+      person["firstName"] = "John";
+      person["lastName"] = "Doe";
+      console.log(person["firstName"]); //result Jhon
+      console.log(person[0]); //result undefined
+
+      //YOU SHOULD KNOW
+
+      //ARRAYS ARE USE NUMBERED İNDEXES
+      //OBJECTS ARE USE NAMED İNDEXES 
+      //ALTHOUGHT ARRAYS ARE KİND OF SPECİAL OBJECTS WHİCH ARE USE NUMBERED İNDEXES
+
+      // how to built an array in JS
+      const points0 = new Array();
+      const points1 = [];
+      //examples
+      const points2 = new Array(40, 100, 1, 5, 25, 10);
+      const points3 = [40, 100, 1, 5, 25, 10];
+  
+  
+  
+  
+      
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+    //As you know Array elements can be objects
+    function fullName(){
+      `person name ${this.name}, person surname ${this.surname} `
+    }
+    console.log(arr1[3]);
+
+  </script>
+</body>
+</html>

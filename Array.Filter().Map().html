@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter And Map Methods</title>
+</head>
+<body>
+    <input type="number" id="giris" placeholder="write some number">
+    <button onclick="myS()" on id="sayma">delete</button>
+    <button onclick="myF()" id="say">increase</button>
+    <p id="yazdir"></p>
+    <p id="artır"></p>
+    <script>
+        //Filter Method delete one which picked by the user
+        let arr=[1,2,3,4,5];
+        function myA(i){
+            return document.getElementById('giris').value != [i]  ;
+        };
+
+        function myS(){
+            return  document.getElementById('yazdir').innerHTML = arr.filter(myA);
+        }
+        //Map Method increase by user selected
+        function myE(element){
+            return ((element) += parseInt(document.getElementById('giris').value)) ;
+        }
+        function myF(){
+            return document.getElementById('artır').innerHTML=arr.map(myE);
+        }
+
+    </script>
+</body>
+</html>
